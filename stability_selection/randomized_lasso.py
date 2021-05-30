@@ -13,13 +13,11 @@ References
     (Statistical Methodology), 72(4), pp.417-473.
 """
 import numpy as np
-
 from scipy import sparse
 from scipy.sparse import issparse
-
-from sklearn.linear_model import LogisticRegression, Lasso
-from sklearn.linear_model.base import _preprocess_data
-from sklearn.utils import check_X_y, check_random_state
+from sklearn.linear_model import Lasso, LogisticRegression
+from sklearn.linear_model._base import _preprocess_data
+from sklearn.utils import check_random_state, check_X_y
 
 __all__ = ['RandomizedLogisticRegression', 'RandomizedLasso']
 
