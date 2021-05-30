@@ -1,28 +1,15 @@
-from __future__ import print_function
-import sys
-from setuptools import setup, find_packages
+#!/usr/bin/env python
 
-with open('requirements.txt') as f:
-    INSTALL_REQUIRES = [l.strip() for l in f.readlines() if l]
-
-
-try:
-    import numpy
-except ImportError:
-    print('numpy is required during installation')
-    sys.exit(1)
-
-try:
-    import scipy
-except ImportError:
-    print('scipy is required during installation')
-    sys.exit(1)
+from setuptools import find_packages, setup
 
 setup(name='stability-selection',
-      version='0.0.1',
+      version='0.1.0',
       description='A scikit-learn compatible implementation of stability selection for feature selection',
       author='Thomas Huijskens',
       packages=find_packages(),
-      install_requires=INSTALL_REQUIRES,
+      install_requires=[
+            "numpy==1.20.2",
+            "scikit-learn==0.24.2",
+      ],
       author_email='thomas_huijskens@hotmail.com',
       )
