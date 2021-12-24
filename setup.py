@@ -10,6 +10,7 @@ setup(name='stability-selection',
       install_requires=[
             "numpy>=1.19",
             "scikit-learn>=0.24",
+            "matplotlib>=3"
       ],
       author_email='thomas_huijskens@hotmail.com',
       )
