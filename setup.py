@@ -8,8 +8,8 @@ setup(name='stability-selection',
       author='Thomas Huijskens',
       packages=find_packages(),
       install_requires=[
-            "numpy==1.20.2",
-            "scikit-learn==0.24.2",
+            "numpy>=1.19",
+            "scikit-learn>=0.24",
       ],
       author_email='thomas_huijskens@hotmail.com',
       )
